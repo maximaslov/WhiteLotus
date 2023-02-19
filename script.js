@@ -537,7 +537,7 @@ const input = document.querySelector('.search')
         
     // }
 
-    input.addEventListener('keydown', function(event) {
+    input.addEventListener('keyup', function(event) {
         if (event.keyCode === 13) {
           filterSearch();
           main.style.display = "none";
