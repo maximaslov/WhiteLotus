@@ -526,17 +526,27 @@ const input = document.querySelector('.search')
 
 
 {
-    let searchValue = input.value
-    domElements.search.input.oninput = () => {
-    searchValue = input.value
+    let searchValue = input.value;
+//     domElements.search.input.oninput = () => {
+//     searchValue = input.value
         
-    }
+//     }
     // let searchValue = ''
     // domElements.search.input.oninput = (event) => {
     // searchValue = event.target.value
         
     // }
 
+    // input.addEventListener('input', function(event) {
+    //     if (event.inputType === 'insertLineBreak' || event.inputType === 'insertText') {
+    //       filterSearch();
+    //       main.style.display = "none";
+    //       cardContainer.style.display = "grid";
+    //     }
+    //   });
+    input.addEventListener('change', function(event) {
+        searchValue = event.target.value
+      });
     input.addEventListener('keyup', function(event) {
         if (event.keyCode === 13) {
           filterSearch();
@@ -544,12 +554,15 @@ const input = document.querySelector('.search')
           cardContainer.style.display = "grid";
         }
       });
-    // domElements.search.input.addEventListener('keypress', function(event) {
-    //     if (event.keyCode === 13) {
+
+    // input.addEventListener('input', function(event) {
+    //     // if (event.inputType === 'insertLineBreak' || event.inputType === 'insertText') {
+    //         const text = event.target.value;
+    //         console.log(text)
     //       filterSearch();
     //       main.style.display = "none";
     //       cardContainer.style.display = "grid";
-    //     }
+    //     // }
     //   });
 
     domElements.search.button.addEventListener("click", () => {
