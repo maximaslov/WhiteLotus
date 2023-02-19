@@ -548,7 +548,7 @@ const input = document.querySelector('.search')
         searchValue = event.target.value
       });
     input.addEventListener('keyup', function(event) {
-        if (event.keyCode === 13) {
+        if (event.keyCode === 13 || event.key === 'Enter') {
           filterSearch();
           main.style.display = "none";
           cardContainer.style.display = "grid";
