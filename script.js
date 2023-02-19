@@ -1,3 +1,5 @@
+const cardsMainContainer = document.querySelector('.nav_btn')
+
 // Product Constructor
 const frame = document.getElementById('card_container')
 
@@ -14,6 +16,7 @@ function generateCardsFlowers() {
         `)
     }
     return cards
+        
 }
 function generateCardsSweet() {
     const cards = []
@@ -224,6 +227,7 @@ window.onload = function() {
             e.preventDefault()
         }
         if(targetElement.classList.contains('item_image')) {
+            cardsMainContainer.classList.add('active');
             const main = document.querySelector('.main')
             const cardContainer = document.querySelector('.card_container')
             if(targetElement.classList.contains('flowers_b')) {
@@ -517,21 +521,36 @@ function generateCards(data) {
 const main = document.querySelector('.main')
 const cardsArr = generateCards(data)
 const cardContainer = document.querySelector('.card_container')
+const input = document.querySelector('.search')
+
+
 
 {
-    let searchValue = ''
-    domElements.search.input.oninput = (event) => {
-        searchValue = event.target.value
+    let searchValue = input.value
+    domElements.search.input.oninput = () => {
+    searchValue = input.value
         
     }
+    // let searchValue = ''
+    // domElements.search.input.oninput = (event) => {
+    // searchValue = event.target.value
+        
+    // }
 
-    domElements.search.input.addEventListener('keypress', function(event) {
+    input.addEventListener('keypress', function(event) {
         if (event.keyCode === 13) {
           filterSearch();
           main.style.display = "none";
           cardContainer.style.display = "grid";
         }
       });
+    // domElements.search.input.addEventListener('keypress', function(event) {
+    //     if (event.keyCode === 13) {
+    //       filterSearch();
+    //       main.style.display = "none";
+    //       cardContainer.style.display = "grid";
+    //     }
+    //   });
 
     domElements.search.button.addEventListener("click", () => {
         filterSearch()
@@ -552,11 +571,12 @@ const cardContainer = document.querySelector('.card_container')
         let filteredCardsData = data.filter(card => {
             if(rgx.test(card.name) || rgx.test(card.description)) {
                 return true
+                
             } else {
                 return false
             }
         })
-
+        input.value=''
         domElements.results.innerHTML = generateCards(filteredCardsData).join('')
     }
 }

@@ -1,14 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&family=Roboto+Slab&display=swap');
+
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+img {
+    transition: transform 0.25ms ease;
+}
+
+.nav_btn {
+    display: none;
+}
+
+.nav_btn img {
+    transition: transform 0.25s ease;
+    max-width: 30px;
+}
+
+.nav_btn img:hover {
+    transform: scale(1.2);
+}
+
+.nav_btn.active {
+    display: block;
+    margin-top: 6px;
+}
+
+.menu_navlink-item {
+    transition: transform 0.25s ease;
+}
+
+.menu_navlink-item:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 1150px) {
+    .search_form {
+        width: 60%;
+    }
+}
+@media (max-width: 1000px) {
+    .nav_btn {
+        top: 114px;
+        left: 13px;
+    }
+}
+
 @media (max-width: 1920px) {
     * {
         margin: 0;
         padding: 0;
+        transition: transform 0.25ms ease;
     }
 
     html, body{
         width: 100%;
         min-height: 100%;
         background-color: #E8E8E8;
+        position: relative;
     }
     
     .header {
@@ -17,6 +68,15 @@
         background: linear-gradient(87.99deg, #FFB800 0%, #FF6B00 100%);
         display: flex;
         justify-content: center;
+    }
+
+    .header-link {
+        display: flex;
+        transition: transform 0.25s ease;
+    }
+
+    .header-link:hover {
+        transform: scale(1.3);
     }
     
     .logo {
@@ -58,6 +118,11 @@
         background-color: transparent;
         max-height: 24px;
         max-width: 24px;
+        transition: transform 0.25s ease;
+    }
+
+    .search_btn:hover {
+        transform: scale(1.2);
     }
 
     .search_image {
@@ -69,23 +134,31 @@
         height: 100%;
         width: 100%;
     }
+
+
+    
     
     .navigation {
-        width: 100%;
+        z-index: 1;
+        margin: 0 auto;
         height: auto;
         padding-top: 16px;
         padding-bottom: 20px;
+        padding: 20px;
         display: flex;
         justify-content: center;
+        align-items: center;
         position: sticky;
         top: 0;
         background-color: #e8e8e8ce;
+        margin-bottom: 20px;
     }
     
     .nav_container {
         width: 100%;
         display: flex; 
         justify-content: space-around;
+        align-items: center;
         flex-direction: row;
     }
 
@@ -95,7 +168,14 @@
         display: flex;
         justify-content: center;
         position: relative;
-        transition: color 0.3s ease 0s;
+    }
+
+    .cart_icon {
+        transition: transform 0.25s ease;
+    }
+
+    .cart_icon:hover {
+        transform: scale(1.2);
     }
 
     .menu {
@@ -103,6 +183,14 @@
         height: 30px;
         display: flex;
         justify-content: center;
+    }
+
+    .menu img {
+        transition: transform 0.25s ease;
+    }
+
+    .menu img:hover {
+        transform: scale(1.2);
     }
 
     .categories {
@@ -131,10 +219,11 @@
         display: flex;
         align-items: center;
         overflow: hidden;
+        transition: transform 0.25s ease;
     }
 
-    .item img {
-        width: 100%;
+    .item:hover {
+        transform: scale(1.1);
     }
 
     .item_name {
@@ -224,6 +313,7 @@
         grid-template-columns: 1fr 1fr;
         background-color: #E8E8E8;
         justify-items: center;
+        position: relative;
     }
 
     .card {
@@ -270,6 +360,11 @@
         border-radius: 10px;
         cursor: pointer;
         color: #fff;
+        transition: transform 0.25s ease;
+    }
+
+    .card_btn:hover {
+        transform: scale(1.2);
     }
 
     a {
@@ -456,7 +551,7 @@
 
     .modal_img_frame {
         width: 100%;
-        height: 250px;
+        height: 398px;
         overflow: hidden;
         display: flex;
         justify-content: center;
@@ -941,6 +1036,14 @@
         overflow: hidden;
     }
 
+    .card.dataset {
+        transition: transform 0.25s ease;
+    }
+
+    .card.dataset:hover {
+        transform: scale(1.1);
+    }
+
     .card_img_frame {
         width: 270px;
         height: 250px;
@@ -1154,7 +1257,7 @@
 
     .modal_img_frame {
         width: 100%;
-        height: 300px;
+        height: 398px;
         overflow: hidden;
         display: flex;
         justify-content: center;
@@ -1228,10 +1331,15 @@
         font-size: 36px;
         font-weight: bold;
         right: 500px;
-        top: 110px;
+        top: 90px;
         position: fixed;
         z-index: 1001;
         cursor: pointer;
+        transition: transform 0.25s ease;
+    }
+
+    .close:hover {
+        transform: scale(1.2);
     }
 
     .cart_item {

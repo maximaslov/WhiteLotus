@@ -1,223 +1,373 @@
 <!DOCTYPE html>
 <html lang="ua">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>White Lotus</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <a href='' class="header">
-        <img src="assets/logo.png" alt="logo" class="logo">
-        <h1 class="name">White Lotus</h1>
-    </a>
-    <div class="navigation">
-        <div class="nav_container">
-            <div class="search_form">
-                <input class="search" type="text" placeholder="Пошук">
-                <button class="search_btn"><img class="search_image" src="assets/search.png" alt="search"></button>
-            </div>
-            <div class="cart">
-                <img class="cart_icon" src="assets/cart.png" alt="cart">
-            </div>
-            <div class="menu">
-                <img id="show-modal" class="menu_img btn" src="assets/menu.png" alt="menu">
-            </div>
-        </div>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <div class="header">
+        <a href="" class="header-link">
+            <img src="assets/logo.png" alt="logo" class="logo" />
+            <h1 class="name">White Lotus</h1>
+          </a>
     </div>
-        <div class="main">
-            <div class="categories">
-                <div class="item"><img src="categories/flowers_b.JPG" alt="image" class="item_image flowers_b"></div>
-                <p>Букети з квітів</p>
+      <div class="navigation">
+        <div class="nav_container">
+            <div class="nav_btn">
+                <a href="" class="back-btn">
+                    <img src="./images/back-arrow.png" alt="" />
+                </a>
             </div>
-            <div class="categories">
-                <div class="item"><img src="categories/sweet_b.JPG" alt="image" class="item_image sweet_b"></div>
-                <p>Солодкі букети</p>
-            </div>
-            <div class="categories">
-                <div class="item"><img src="categories/boxes.JPG" alt="image" class="item_image boxes"></div>
-                <p>Бокси</p>
-            </div>
-            <div class="categories">
-                <div class="item"><img src="categories/mans.PNG" alt="image" class="item_image mans"></div>
-                <p>Чоловічі букети</p>
-            </div>
-            <div class="categories">
-                <div class="item"><img src="categories/fruit_b.JPG" alt="image" class="item_image fruit_b"></div>
-                <p>Фруктові букети</p>
-            </div>
-            <div class="categories">
-                <div class="item"><img src="categories/fruit_baskets.jpg" alt="image" class="item_image fruit_baskets"></div>
-                <p>Фруктові кошики</p>
-            </div>
-            <div class="categories">
-                <div class="item"><img src="categories/gift_baskets.JPG" alt="image" class="item_image gift_baskets"></div>
-                <p>Подарункові кошики</p>
-            </div>
-            <div class="categories">
-                <div class="item"><img src="categories/sets.JPG" alt="image" class="item_image sets"></div>
-                <p>Набори</p>
-            </div>
-            <div class="categories">
-                <div class="item"><img src="categories/gifts_n_sweets.JPG" alt="image" class="item_image gifts_n_sweets"></div>
-                <p>Подарунки та солодощі</p>
-            </div>
+          <div class="search_form">
+            <input class="search" type="text" placeholder="Пошук" />
+            <button class="search_btn">
+              <img class="search_image" src="assets/search.png" alt="search" />
+            </button>
+          </div>
+          <div class="cart">
+            <img class="cart_icon" src="assets/cart.png" alt="cart" />
+          </div>
+          <div class="menu">
+            <img
+              id="show-modal"
+              class="menu_img btn"
+              src="assets/menu.png"
+              alt="menu"
+            />
+          </div>
         </div>
-        <div class="info">
-            <div class="about info_page none"> 
-                <h4>Про нас</h4>
-                <p>Доставка подарунків - це зручний та швидкий варіант, для того, 
-                    щоб зробити приємний сюрприз близькій людині.
-                </p><br>
-                <p>Компанія Білий Лотос допоможе вам привітати кохану людину, друга, колегу або 
-                    оформити корпоративний подарунок. Ми з задоволенням підберемо подарунок враховуючи 
-                    ваші побажання та бюджет.
-                </p><br>
-                <p>Наша компанія виготовляє та доставляє таку продукцію, як:</p>
-                <ul>
-                    <li>- Їстівний букет. Це може бути букет з цукерок, букет з фруктів, чоловічий букет з 
-                    ковбаси та сирів, букет з овочів;</li>
-                    <li>- Подарунковий кошик. Кошик з солодощами, кошик доповнений квітами та смачними продуктами;</li>
-                    <li>- Подарунковий бокс. Наповнення є різне, на будь-який смак. Цукерки, шоколад, 
-                        різноманітні батончики, сухофрукти, макаруни, шампанське, вино, фрукти;</li>
-                    <li>- Фруктовий кошик. В склад входять різноманітні фрукти. Виготовляємо кошики з екзотичними фруктами. 
-                        Може бути доповнення у вигляді квітів чи іншого декору. </li>
-                    </ul>
-                <p>Всі композиції виготовляємо з якісних та свіжих товарів. Склад може корегуватись в залежності
-                    від бажань клієнта. Вартість заміни продуктів оговорюється з менеджером.</p> 
-            </div>
-            <div class="payment info_page none">
-                <h4>Cпособи оплати:</h4>
-                <ul>
-                    <li>-Оплата на картку Приватбанку чи Монобанку
-                    Оплату можна виконати через Приват24, додаток Монобанку, у терміналі, касі банку чи банкоматі. 
-                    Номер картки вам відправить наш менеджер СМС-повідомленням, Viber, WhatsApp, Telegram або по Email.</li>  
-                    <li>-Оплата банківською картою Visa або MasterCard через платіжну систему Liqpay. Реквізити на 
-                    оплату даним способом відправляємо на Email.</li>
-                    <li>-Оплата готівкою при отримані. Можливо якщо ви самостійно отримуєте доставку. 
-                    Умови сплати при отримані - часткова передоплата 30% від вартості замовлення.</li>
-                    <li>-Оплата на розрахунковий рахунок. Оплату можна здійснити в онлайн додатку. Або 
-                    сплатити в будь-якому банку.
-                    Грошовий переказ Western Union/Moneygram/Золота Корона. Реквізити на оплату відправляємо на email 
-                    або Viber, WhatsApp, Telegram після оформлення замовлення.</li>
-                    <li>-Оплата PayPal. Реквізити на оплату відправляємо після формування замовлення.</li>
-                </ul><br>
-                <p>Згідно постанови КМУ #172 від 19.03.1994р. Про реалізацію окремих положень Закону України 
-                    « Про захист прав споживачів» продовольчі товари з асортименту не підлягають обміну (поверненню).</p>
-                <p>Повернення коштів можливо отримати не пізніше ніж за два дні до запланованої дати доставки.</p>
-                <p>Сума відшкодування обговорюється з менеджером індивідуально.</p>
-            </div>
-            <div class="delivery info_page none">
-                <h4>Оплата та доставка</h4>
-                <p>Ми здійснюємо безкоштовну доставку у таких містах: Київ, Одеса, Львів, Харків, Дніпро, Запоріжжя, 
-                Полтава, Чернівці, Черкаси, Біла Церква, Бориспіль, Житомир, Чернігів, Хмельницький, Ужгород, Вінниця, 
-                Івано-Франківськ, Кам’янець-Подільський, Ірпінь, Ізмаїл, Луцьк, Тернопіль, Умань, Кременчук, 
-                Суми, Рівне, Бровари, Кривий Ріг, Івано-Франківськ, Кам’янське, Ковель, Кропивницький, Умань.</p><br>
-                <p>Вартість доставки в інші населені пункти необхідно уточнювати у менеджера.</p><br>
-                <p>Доставка безкоштовна при замовленні від 600 гривень.</p><br>
-                <p>Доставка здійснюється на протязі  2-3 годин з моменту оплати. Або на вказану вами дату та час.</p><br> 
-                <p>З приводу швидкої доставки 1-2 години уточнюйте в менеджера.</p><br>
-                <p>Замовлення з доставкою день в день приймаються до 16-17. Доставка в ранній час 
-                здійснюється при оплаті замовлення до 16:00 попереднього дня.</p>
-            </div>
+      </div>
+      <div class="main">
+        <div class="categories">
+          <div class="item">
+            <img
+              src="categories/flowers_b.JPG"
+              alt="image"
+              class="item_image flowers_b"
+            />
+          </div>
+          <p>Букети з квітів</p>
         </div>
-        <div id="card_container" class="card_container none"></div>
-        <div class="card_modal"></div>
-        <div class="cart_list">
-            <h1 class="cart_title">Мій кошик</h1>
-            <div class="cart_body"></div>
-            <button class="cart_btn_buy">Замовити</button>
-            <img class="cart_empty none" src="assets/sadEmoji.png" alt="">
-            <form class="form none">
-                <input type="text" name="Ім'я">
-                <input type="number" name="Номер телефону">
-                <input type="email" name="Email">
-                <input type="text" name="Адреса доставки">
-                <input type="text" name="Ім'я отримувача">
-                <input type="text" name="Номер телефону отримувача">
-                <input type="text" name="Ім'я">
-                <input type="time" name="Час доставки">
-                <textarea type="text" name="Коментар"></textarea>
-                <input type="radio" name="Метод оплати">
-            </form>
+        <div class="categories">
+          <div class="item">
+            <img
+              src="categories/sweet_b.JPG"
+              alt="image"
+              class="item_image sweet_b"
+            />
+          </div>
+          <p>Солодкі букети</p>
         </div>
-        <div class="footer">
-            <h2>Топ товарів</h2>
-            <div class="slider">
-                <div class="slider_item dataset" data-pid="285">
-                    <div class="item"><img class="card_img" src="images/card_285.JPG" alt="image"></div>
-                    <p class="item_name">Подарунковий кошик Репортер</p>
-                    <p class="item_price">Ціна: 1645</p>
-                    <button class="button">Замовити</button>
-                </div>
-                <div class="slider_item dataset" data-pid="76">
-                    <div class="item"><img class="card_img" src="images/card_76.jpg" alt="image"></div>
-                    <p class="item_name">Букет Милість</p>
-                    <p class="item_price">Ціна: 795</p>
-                    <button class="button">Замовити</button>
-                </div>
-                <div class="slider_item dataset" data-pid="122">
-                    <div class="item"><img class="card_img" src="images/card_122.JPG" alt="image"></div>
-                    <p class="item_name">Букет Ніжні Обійми</p>
-                    <p class="item_price">Ціна: 1495</p>
-                    <button class="button">Замовити</button>
-                </div>
-                <div class="slider_item dataset" data-pid="87">
-                    <div class="item"><img class="card_img" src="images/card_87.jpg" alt="image"></div>
-                    <p class="item_name">Букет Північне Сяйво</p>
-                    <p class="item_price">Ціна: 945</p>
-                    <button class="button">Замовити</button>
-                </div>
-                <div class="slider_item dataset" data-pid="319">
-                    <div class="item"><img class="card_img" src="images/card_319.JPG" alt="image"></div>
-                    <p class="item_name">Букет Моїй Королеві</p>
-                    <p class="item_price">Ціна: 995</p>
-                    <button class="button">Замовити</button>
-                </div>
-                <div class="slider_item dataset" data-pid="396">
-                    <div class="item"><img class="card_img" src="images/card_396.jpg" alt="image"></div>
-                    <p class="item_name">Фруктовий кошик Тропічний</p>
-                    <p class="item_price">Ціна: 1595</p>
-                    <button class="button">Замовити</button>
-                </div>
-                <div class="slider_item dataset" data-pid="407">
-                    <div class="item"><img class="card_img" src="images/card_407.JPG" alt="image"></div>
-                    <p class="item_name">Подарунковий кошик Користь</p>
-                    <p class="item_price">Ціна: 895</p>
-                    <button class="button">Замовити</button>
-                </div>
-                <div class="slider_item dataset" data-pid="417">
-                    <div class="item"><img class="card_img" src="images/card_417.JPG" alt="image"></div>
-                    <p class="item_name">Сирний кошик Люкс</p>
-                    <p class="item_price">Ціна: 1495</p>
-                    <button class="button">Замовити</button>
-                </div>
-                <div class="slider_item dataset" data-pid="269">
-                    <div class="item"><img class="card_img" src="images/card_269.PNG" alt="image"></div>
-                    <p class="item_name">Букет Мажор</p>
-                    <p class="item_price">Ціна: 1595</p>
-                    <button class="button">Замовити</button>
-                </div>
-                <div class="slider_item dataset" data-pid="219">
-                    <div class="item"><img class="card_img" src="images/card_219.jpg" alt="image"></div>
-                    <p class="item_name">Набір Королівський</p>
-                    <p class="item_price">Ціна: 1395</p>
-                    <button class="button">Замовити</button>
-                </div>
+        <div class="categories">
+          <div class="item">
+            <img
+              src="categories/boxes.JPG"
+              alt="image"
+              class="item_image boxes"
+            />
+          </div>
+          <p>Бокси</p>
+        </div>
+        <div class="categories">
+          <div class="item">
+            <img
+              src="categories/mans.PNG"
+              alt="image"
+              class="item_image mans"
+            />
+          </div>
+          <p>Чоловічі букети</p>
+        </div>
+        <div class="categories">
+          <div class="item">
+            <img
+              src="categories/fruit_b.JPG"
+              alt="image"
+              class="item_image fruit_b"
+            />
+          </div>
+          <p>Фруктові букети</p>
+        </div>
+        <div class="categories">
+          <div class="item">
+            <img
+              src="categories/fruit_baskets.jpg"
+              alt="image"
+              class="item_image fruit_baskets"
+            />
+          </div>
+          <p>Фруктові кошики</p>
+        </div>
+        <div class="categories">
+          <div class="item">
+            <img
+              src="categories/gift_baskets.JPG"
+              alt="image"
+              class="item_image gift_baskets"
+            />
+          </div>
+          <p>Подарункові кошики</p>
+        </div>
+        <div class="categories">
+          <div class="item">
+            <img
+              src="categories/sets.JPG"
+              alt="image"
+              class="item_image sets"
+            />
+          </div>
+          <p>Набори</p>
+        </div>
+        <div class="categories">
+          <div class="item">
+            <img
+              src="categories/gifts_n_sweets.JPG"
+              alt="image"
+              class="item_image gifts_n_sweets"
+            />
+          </div>
+          <p>Подарунки та солодощі</p>
+        </div>
+      </div>
+      <div class="info">
+        <div class="about info_page none">
+          <h4>Про нас</h4>
+          <p>
+            Доставка подарунків - це зручний та швидкий варіант, для того, щоб
+            зробити приємний сюрприз близькій людині.
+          </p>
+          <br />
+          <p>
+            Компанія Білий Лотос допоможе вам привітати кохану людину, друга,
+            колегу або оформити корпоративний подарунок. Ми з задоволенням
+            підберемо подарунок враховуючи ваші побажання та бюджет.
+          </p>
+          <br />
+          <p>Наша компанія виготовляє та доставляє таку продукцію, як:</p>
+          <ul>
+            <li>
+              - Їстівний букет. Це може бути букет з цукерок, букет з фруктів,
+              чоловічий букет з ковбаси та сирів, букет з овочів;
+            </li>
+            <li>
+              - Подарунковий кошик. Кошик з солодощами, кошик доповнений квітами
+              та смачними продуктами;
+            </li>
+            <li>
+              - Подарунковий бокс. Наповнення є різне, на будь-який смак.
+              Цукерки, шоколад, різноманітні батончики, сухофрукти, макаруни,
+              шампанське, вино, фрукти;
+            </li>
+            <li>
+              - Фруктовий кошик. В склад входять різноманітні фрукти.
+              Виготовляємо кошики з екзотичними фруктами. Може бути доповнення у
+              вигляді квітів чи іншого декору.
+            </li>
+          </ul>
+          <p>
+            Всі композиції виготовляємо з якісних та свіжих товарів. Склад може
+            корегуватись в залежності від бажань клієнта. Вартість заміни
+            продуктів оговорюється з менеджером.
+          </p>
+        </div>
+        <div class="payment info_page none">
+          <h4>Cпособи оплати:</h4>
+          <ul>
+            <li>
+              -Оплата на картку Приватбанку чи Монобанку Оплату можна виконати
+              через Приват24, додаток Монобанку, у терміналі, касі банку чи
+              банкоматі. Номер картки вам відправить наш менеджер
+              СМС-повідомленням, Viber, WhatsApp, Telegram або по Email.
+            </li>
+            <li>
+              -Оплата банківською картою Visa або MasterCard через платіжну
+              систему Liqpay. Реквізити на оплату даним способом відправляємо на
+              Email.
+            </li>
+            <li>
+              -Оплата готівкою при отримані. Можливо якщо ви самостійно
+              отримуєте доставку. Умови сплати при отримані - часткова
+              передоплата 30% від вартості замовлення.
+            </li>
+            <li>
+              -Оплата на розрахунковий рахунок. Оплату можна здійснити в онлайн
+              додатку. Або сплатити в будь-якому банку. Грошовий переказ Western
+              Union/Moneygram/Золота Корона. Реквізити на оплату відправляємо на
+              email або Viber, WhatsApp, Telegram після оформлення замовлення.
+            </li>
+            <li>
+              -Оплата PayPal. Реквізити на оплату відправляємо після формування
+              замовлення.
+            </li>
+          </ul>
+          <br />
+          <p>
+            Згідно постанови КМУ #172 від 19.03.1994р. Про реалізацію окремих
+            положень Закону України « Про захист прав споживачів» продовольчі
+            товари з асортименту не підлягають обміну (поверненню).
+          </p>
+          <p>
+            Повернення коштів можливо отримати не пізніше ніж за два дні до
+            запланованої дати доставки.
+          </p>
+          <p>Сума відшкодування обговорюється з менеджером індивідуально.</p>
+        </div>
+        <div class="delivery info_page none">
+          <h4>Оплата та доставка</h4>
+          <p>
+            Ми здійснюємо безкоштовну доставку у таких містах: Київ, Одеса,
+            Львів, Харків, Дніпро, Запоріжжя, Полтава, Чернівці, Черкаси, Біла
+            Церква, Бориспіль, Житомир, Чернігів, Хмельницький, Ужгород,
+            Вінниця, Івано-Франківськ, Кам’янець-Подільський, Ірпінь, Ізмаїл,
+            Луцьк, Тернопіль, Умань, Кременчук, Суми, Рівне, Бровари, Кривий
+            Ріг, Івано-Франківськ, Кам’янське, Ковель, Кропивницький, Умань.
+          </p>
+          <br />
+          <p>
+            Вартість доставки в інші населені пункти необхідно уточнювати у
+            менеджера.
+          </p>
+          <br />
+          <p>Доставка безкоштовна при замовленні від 600 гривень.</p>
+          <br />
+          <p>
+            Доставка здійснюється на протязі 2-3 годин з моменту оплати. Або на
+            вказану вами дату та час.
+          </p>
+          <br />
+          <p>З приводу швидкої доставки 1-2 години уточнюйте в менеджера.</p>
+          <br />
+          <p>
+            Замовлення з доставкою день в день приймаються до 16-17. Доставка в
+            ранній час здійснюється при оплаті замовлення до 16:00 попереднього
+            дня.
+          </p>
+        </div>
+      </div>
+      <div id="card_container" class="card_container none"></div>
+      <div class="card_modal"></div>
+      <div class="cart_list">
+        <h1 class="cart_title">Мій кошик</h1>
+        <div class="cart_body"></div>
+        <button class="cart_btn_buy">Замовити</button>
+        <img class="cart_empty none" src="assets/sadEmoji.png" alt="" />
+        <form class="form none">
+          <input type="text" name="Ім'я" />
+          <input type="number" name="Номер телефону" />
+          <input type="email" name="Email" />
+          <input type="text" name="Адреса доставки" />
+          <input type="text" name="Ім'я отримувача" />
+          <input type="text" name="Номер телефону отримувача" />
+          <input type="text" name="Ім'я" />
+          <input type="time" name="Час доставки" />
+          <textarea type="text" name="Коментар"></textarea>
+          <input type="radio" name="Метод оплати" />
+        </form>
+      </div>
+      <div class="footer">
+        <h2>Топ товарів</h2>
+        <div class="slider">
+          <div class="slider_item dataset" data-pid="285">
+            <div class="item">
+              <img class="card_img" src="images/card_285.JPG" alt="image" />
             </div>
+            <p class="item_name">Подарунковий кошик Репортер</p>
+            <p class="item_price">Ціна: 1645</p>
+            <button class="button">Замовити</button>
+          </div>
+          <div class="slider_item dataset" data-pid="76">
+            <div class="item">
+              <img class="card_img" src="images/card_76.jpg" alt="image" />
+            </div>
+            <p class="item_name">Букет Милість</p>
+            <p class="item_price">Ціна: 795</p>
+            <button class="button">Замовити</button>
+          </div>
+          <div class="slider_item dataset" data-pid="122">
+            <div class="item">
+              <img class="card_img" src="images/card_122.JPG" alt="image" />
+            </div>
+            <p class="item_name">Букет Ніжні Обійми</p>
+            <p class="item_price">Ціна: 1495</p>
+            <button class="button">Замовити</button>
+          </div>
+          <div class="slider_item dataset" data-pid="87">
+            <div class="item">
+              <img class="card_img" src="images/card_87.jpg" alt="image" />
+            </div>
+            <p class="item_name">Букет Північне Сяйво</p>
+            <p class="item_price">Ціна: 945</p>
+            <button class="button">Замовити</button>
+          </div>
+          <div class="slider_item dataset" data-pid="319">
+            <div class="item">
+              <img class="card_img" src="images/card_319.JPG" alt="image" />
+            </div>
+            <p class="item_name">Букет Моїй Королеві</p>
+            <p class="item_price">Ціна: 995</p>
+            <button class="button">Замовити</button>
+          </div>
+          <div class="slider_item dataset" data-pid="396">
+            <div class="item">
+              <img class="card_img" src="images/card_396.jpg" alt="image" />
+            </div>
+            <p class="item_name">Фруктовий кошик Тропічний</p>
+            <p class="item_price">Ціна: 1595</p>
+            <button class="button">Замовити</button>
+          </div>
+          <div class="slider_item dataset" data-pid="407">
+            <div class="item">
+              <img class="card_img" src="images/card_407.JPG" alt="image" />
+            </div>
+            <p class="item_name">Подарунковий кошик Користь</p>
+            <p class="item_price">Ціна: 895</p>
+            <button class="button">Замовити</button>
+          </div>
+          <div class="slider_item dataset" data-pid="417">
+            <div class="item">
+              <img class="card_img" src="images/card_417.JPG" alt="image" />
+            </div>
+            <p class="item_name">Сирний кошик Люкс</p>
+            <p class="item_price">Ціна: 1495</p>
+            <button class="button">Замовити</button>
+          </div>
+          <div class="slider_item dataset" data-pid="269">
+            <div class="item">
+              <img class="card_img" src="images/card_269.PNG" alt="image" />
+            </div>
+            <p class="item_name">Букет Мажор</p>
+            <p class="item_price">Ціна: 1595</p>
+            <button class="button">Замовити</button>
+          </div>
+          <div class="slider_item dataset" data-pid="219">
+            <div class="item">
+              <img class="card_img" src="images/card_219.jpg" alt="image" />
+            </div>
+            <p class="item_name">Набір Королівський</p>
+            <p class="item_price">Ціна: 1395</p>
+            <button class="button">Замовити</button>
+          </div>
         </div>
-        <script src="data.js"></script>
-        <script src="script.js"></script>
-        <script src="modal.js"></script>
-        <script>
-            (function () {
-                var modal = $modal();
-                document.querySelector('#show-modal').addEventListener('click', function () {
-                    modal.show();
-                });
-            })();
-        </script>
-</body>
+      </div>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+    <script src="modal.js"></script>
+    <script>
+      (function () {
+        var modal = $modal();
+        document
+          .querySelector("#show-modal")
+          .addEventListener("click", function () {
+            modal.show();
+          });
+      })();
+    </script>
+  </body>
 </html>
-
