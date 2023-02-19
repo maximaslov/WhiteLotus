@@ -1,0 +1,1380 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&family=Roboto+Slab&display=swap');
+@media (max-width: 1920px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html, body{
+        width: 100%;
+        min-height: 100%;
+        background-color: #E8E8E8;
+    }
+    
+    .header {
+        width: 100%;
+        height: 93px;
+        background: linear-gradient(87.99deg, #FFB800 0%, #FF6B00 100%);
+        display: flex;
+        justify-content: center;
+    }
+    
+    .logo {
+        width: 93x;
+        height: 93px;
+    }
+
+    .name {
+        display: flex;
+        align-items: center;
+        font-size: 40px;
+        margin-right: 30px;
+    }
+    
+    .search_form {
+        border: 1 solid black;
+        display: flex;
+        padding: 0 20px;
+        justify-content: space-between;
+        align-items: center;
+        height: 30px;
+        border-radius: 20px;
+        overflow: hidden;
+        background-color: #fff;
+        box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .search {
+        border: none;
+        width: 200px;
+        outline: none;
+        font-size: 20px;
+        padding-right: 10px;
+        background-color: transparent;
+    }
+
+    .search_btn {
+        border: none;
+        background-color: transparent;
+        max-height: 24px;
+        max-width: 24px;
+    }
+
+    .search_image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .navigation {
+        width: 100%;
+        height: auto;
+        padding-top: 16px;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        position: sticky;
+        top: 0;
+        background-color: #e8e8e8ce;
+    }
+    
+    .nav_container {
+        width: 100%;
+        display: flex; 
+        justify-content: space-around;
+        flex-direction: row;
+    }
+
+    .cart {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        transition: color 0.3s ease 0s;
+    }
+
+    .menu {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .categories {
+        height: 100%;
+        width: 100%;
+        background-color: #E8E8E8;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .main {
+        width: 100%;
+        height: 380px;
+        display: grid;
+        grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+        justify-items: center;
+    }
+    
+    .item {
+        background-color: #fff;
+        min-height: 85px;
+        width: 85px;
+        border-radius: 20px;
+        box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .item img {
+        width: 100%;
+    }
+
+    .item_name {
+        font-family: 'Roboto Slab';
+        font-size: 12px;
+        text-align: center;
+        margin: 10px 0 5px 0 ;
+        height: 30px;
+        font-weight: bold;
+    }
+
+    .categories p {
+        display: grid;
+        text-align: center;
+        font-size: 12px;
+    }
+    
+    .footer {
+        width: 100%;
+        height: 257px;
+        margin-top: 30px;
+        background-color: #E8E8E8;
+    }
+
+    .slider {
+        min-width: 100%;
+        min-height: 220px;
+        background-color: #D9D9D9;
+        display: flex;
+        overflow-x: auto;
+    }
+
+    .slider_item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: 15px;
+        min-width: 120px;
+        height: 190px;
+        margin: 0 5px;
+        background-color: #D9D9D9;
+    }
+
+    .item_price {
+        font-family: 'Roboto Slab';
+        font-size: 12px;
+        color: green;
+    }
+
+    .button {
+        position: relative;
+        bottom: 0px;
+        border: none;
+        min-width: 90px;
+        min-height: 30px;
+        background: linear-gradient(180deg, #FF6B00 0%, #FFB800 100%);
+        border-radius: 10px;
+        padding: 5px;
+        margin-top: 15px;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    .footer h2 {
+        margin-left: 26px;
+        font-family: 'Roboto Slab', serif;
+        margin-bottom: 5px;
+    }
+    
+    p {
+        font-family: 'Roboto Slab', serif;
+        font-style: normal;
+        font-weight: 400px;
+        font-size: 10px;
+        line-height: 13px;
+    }
+
+    .item_image {
+        width: 100%;
+        height: 100%; 
+    }
+
+    .card_container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: #E8E8E8;
+        justify-items: center;
+    }
+
+    .card {
+        width: 170px;
+        height: 266px;
+        background: #fff;
+        box-shadow: 6px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        margin-bottom: 20px;
+        display: grid;
+        justify-items: center;
+        overflow: hidden;
+    }
+
+    .card_img_frame {
+        width: 170px;
+        height: 159px;
+        overflow: hidden;
+    }
+
+    .card img {
+        max-width:100%;
+        height:auto;
+    }
+
+    .card_name {
+        font-family: 'IM Fell French Canon SC', serif;
+        font-size: 15px;
+        font-weight: 400px;
+        line-height: 16px;
+        text-align: center;
+    }
+
+    .price {
+        font-size: 12px;
+        margin-right: 40px;
+    }
+
+    .card_btn {
+        border: none;
+        width: 127px;
+        height: 31px;
+        background: linear-gradient(180deg, #FF6B00 0%, #FFB800 100%);
+        border-radius: 10px;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+    .menu_img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .modal__backdrop {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.8);
+        opacity: 0;
+        z-index: -1;
+        pointer-events: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.5s ease 0s;
+      }
+      
+    .modal__content {
+        position: relative;
+        min-width: 90%;
+        min-height: 420px;
+        margin: 10px;
+        transition: opacity 0.3s ease-in;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.781);
+        background-clip: padding-box;
+        border-radius: 20px;
+        box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.3);
+    }
+      
+    @media (min-width: 576px) {
+        .modal__content {
+          max-width: 500px;
+          margin: 50px auto;
+        }
+    }
+      
+    .modal__show .modal__backdrop,
+    .modal__show .modal__content {
+        opacity: 1;
+        z-index: 1050;
+        pointer-events: auto;
+        overflow-y: auto;
+    }
+      
+    .modal__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+    }
+      
+    .modal__title {
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 1.5;
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+      
+    .modal__btn-close {
+        float: right;
+        font-family: sans-serif;
+        font-size: 52px;
+        font-weight: 700;
+        line-height: 1;
+        color: #000;
+        text-shadow: 0 1px 0 #fff;
+        opacity: 0.9;
+        text-decoration: none;
+    }
+      
+    .modal__btn-close:focus,
+    .modal__btn-close:hover {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+        opacity: 0.75;
+    }
+      
+    .modal__body {
+        position: relative;
+        flex: 1 1 auto;
+        overflow: auto;
+    }
+      
+    .modal__footer {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 1rem;
+    }
+      
+    .menu_navlink {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 32px;
+    }
+
+    .menu_navlink a {
+        margin-bottom: 5px;
+    }
+
+    .menu_link_img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu_link_img img {
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        margin: 20px;
+    }
+
+    ._flyImage._ibg {
+        opacity: 1;
+        position: fixed;
+        z-index: 100;
+        transition: all 1s ease 0s;
+    }
+
+    .cart span {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: -10px;
+        right: -10px;
+        border-radius: 50%;
+        background: linear-gradient(180deg, #FF6B00 0%, #FFB800 100%);
+        color: #fff;
+        font-size: 12px;
+        z-index: 3;
+    }
+
+    .card_modal {
+        display: none; 
+        position: fixed; 
+        z-index: 4; 
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto; /* Включите прокрутку, если это необходимо */
+        background: rgba(0, 0, 0, 0.712);
+    }
+      
+    /* Модальное содержание */
+    .card_modal_content {
+        position: relative;
+        background-color: #fff;
+        margin: auto;
+        width: 70%;
+        height: auto;
+        border-radius: 20px;
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatetop;
+        animation-duration: 0.4s;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .modal_img_frame {
+        width: 100%;
+        height: 250px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+    }
+
+    .modal_img {
+        width: 100%;
+    }
+
+    .modal_card_title {
+        font-family: 'IM Fell French Canon SC', serif;
+        text-align: center;
+        margin: 15px 0 10px 0;
+        font-size: 18px;
+        font-weight: bold;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+      
+    .modal_description {
+        font-size: 12px;
+        max-width: 180px;
+        text-align: center;
+    }
+
+    .modal_price {
+        font-size: 12px;
+        margin-right: 10px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .modal_btn {
+        border: none;
+        width: 110px;
+        height: 28px;
+        background: linear-gradient(180deg, #FF6B00 0%, #FFB800 100%);
+        border-radius: 8px;
+        cursor: pointer;
+        color: #fff;
+        margin-left: 10px;
+    }
+
+    .modal_card_footer {
+        padding: 10px;
+        margin-top: 20px;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    @-webkit-keyframes animatetop {
+        from {top:-300px; opacity:0} 
+        to {top:0; opacity:1}
+    }
+      
+    @keyframes animatetop {
+        from {top:-300px; opacity:0}
+        to {top:0; opacity:1}
+    }
+
+    @keyframes animateFromTop {
+        from {top:-300px; opacity:0}
+        to {top:150px; opacity:1}
+    }
+      
+    .close {
+        color: #fff;
+        font-size: 36px;
+        font-weight: bold;
+        right: 30px;
+        top: 20px;
+        position: fixed;
+        z-index: 1001;
+    }
+
+    .cart_item {
+        width: 350px;
+        height: 120px;
+        background: #fff;
+        margin: 10px;
+        border-radius: 20px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        box-shadow: 6px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .cart_img_frame {
+        width: 130px;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+    }
+
+    .cart_img {
+        width: 100%; 
+        height: 100%;
+    }
+
+    .trash_icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .cart_item_content {
+        padding: 10px;
+        width: 155px;
+    }
+
+    .cart_icon_frame {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cart_btn_buy {
+        width: 250px;
+        height: 45px;
+        border-radius: 10px;
+        border: none;
+        background: linear-gradient(180deg, #FF6B00 0%, #FFB800 100%);
+        color: #fff;
+        font-size: 24px;
+        margin: 10px auto;
+    }
+
+    .cart_item_title {
+        font-size: 17px;
+        font-weight: bold;
+        font-family: 'IM Fell French Canon SC', serif;
+        margin-bottom: 15px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .cart_quantity,
+    .cart_price {
+        font-size: 15px;
+        margin-left: 5px;
+        font-family: 'Roboto Slab', serif;
+        margin-bottom: 5px;
+    }
+
+    .cart_title {
+        font-family: 'Roboto Slab';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        margin-left: 15px;
+    }
+
+    .cart_list {
+        display: none;
+        position: absolute; 
+        z-index: 4; 
+        padding-top: 25px;
+        left: 0;
+        top: 150px;
+        width: 100%;
+        height: 100%;
+        overflow: auto; 
+        background: #E8E8E8;
+        animation-name: animateFromTop;
+        animation-duration: 0.4s;
+    }
+
+    .cart_content {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cart_body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cart_empty {
+        width: 100%;
+    }
+
+    ._hold {
+        opacity: 0.5;
+        cursor: default;
+    }
+
+    .info .info_page {
+        padding: 10px 30px;
+    }
+
+    .info_page p {
+        font-family: 'Roboto Slab', serif;
+        font-size: 12px;
+        margin: 3px;
+    }
+
+    .info_page li {
+        padding-left: 10px;
+        font-family: 'Roboto Slab', serif;
+        font-size: 12px;
+        list-style: none;
+        margin: 3px;
+    }
+    .none {
+        display: none;
+    }
+}
+/* body, html::-webkit-scrollbar {
+    display: none;
+}  */
+
+@media (min-width: 1000px) /*and (max-width: 1399px)*/ {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html, body{
+        width: 100%;
+        min-height: 100%;
+        background-color: #E8E8E8;
+    }
+    
+    ::-webkit-scrollbar {
+        width: 0px;
+        background: rgba(255, 255, 255, 0.0);
+      }
+
+    .header {
+        width: 100%;
+        height: 210px;
+        background: linear-gradient(87.99deg, #FFB800 0%, #FF6B00 100%);
+        display: flex;
+        justify-content: center;
+    }
+    
+    .logo {
+        width: 210x;
+        height: 210px;
+        cursor: pointer;
+    }
+
+    .name {
+        display: flex;
+        align-items: center;
+        font-size: 94px;
+        margin-right: 30px;
+        cursor: pointer;
+    }
+    
+    .search_form {
+        border: 1 solid black;
+        display: flex;
+        padding: 0 20px;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        border-radius: 20px;
+        overflow: hidden;
+        background-color: #fff;
+        box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .search {
+        border: none;
+        width: 600px;
+        outline: none;
+        font-size: 30px;
+        padding-right: 30px;
+        background-color: transparent;
+    }
+
+    .search_btn {
+        border: none;
+        background-color: transparent;
+        max-height: 40px;
+        max-width: 40px;
+        cursor: pointer;
+    }
+
+    .search_image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .navigation {
+        width: 100%;
+        height: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        position: sticky;
+        top: 0;
+        background-color: #e8e8e8ce;
+    }
+    
+    .nav_container {
+        width: 100%;
+        display: flex; 
+        justify-content: space-around;
+        flex-direction: row;
+    }
+
+    .cart {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        transition: color 0.3s ease 0s;
+        cursor: pointer;
+    }
+
+    .menu {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .menu_img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .categories {
+        height: 100%;
+        width: 100%;
+        background-color: #E8E8E8;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .main {
+        width: 100%;
+        height: 1000px;
+        display: grid;
+        grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+        justify-items: center;
+    }
+    
+    .item {
+        background-color: #fff;
+        min-height: 250px;
+        width: 250px;
+        border-radius: 20px;
+        box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .item img {
+        width: 100%;
+    }
+
+    .item_name {
+        font-family: 'Roboto Slab';
+        font-size: 16px;
+        text-align: center;
+        margin: 10px 0 5px 0 ;
+        height: 30px;
+        font-weight: bold;
+    }
+
+    .categories p {
+        display: grid;
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    .footer {
+        width: 100%;
+        height: 470px;
+        margin-top: 30px;
+        background-color: #E8E8E8;
+    }
+
+    .slider {
+        min-width: 100%;
+        min-height: 420px;
+        background-color: #D9D9D9;
+        display: flex;
+        overflow-x: scroll;
+    }
+
+    .slider::-webkit-scrollbar {
+        width: 20px;
+        background: #D9D9D9;
+      }
+
+    .slider::-webkit-scrollbar-thumb {
+        width: 15px;
+        border-radius: 10px;
+        background: rgba(31, 31, 31, 0.637);
+    }
+
+    .slider_item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: 40px;
+        min-width: 320px;
+        height: 190px;
+        margin: 0 5px;
+        background-color: #D9D9D9;
+    }
+
+    .item_price {
+        font-family: 'Roboto Slab';
+        font-size: 16px;
+        color: green;
+    }
+
+    .button {
+        font-size: 16px;
+        position: relative;
+        bottom: 0px;
+        border: none;
+        min-width: 170px;
+        min-height: 40px;
+        background: linear-gradient(180deg, #FF6B00 0%, #FFB800 100%);
+        border-radius: 10px;
+        padding: 5px;
+        margin-top: 15px;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    .footer h2 {
+        margin-left: 30px;
+        font-family: 'Roboto Slab', serif;
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+    
+    p {
+        font-family: 'Roboto Slab', serif;
+        font-style: normal;
+        font-weight: 400px;
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .item_image {
+        width: 100%;
+        height: 100%; 
+    }
+
+    .card_container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        background-color: #E8E8E8;
+        justify-items: center;
+    }
+
+    .card {
+        width: 270px;
+        height: 400px;
+        background: #fff;
+        box-shadow: 6px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 30px;
+        margin-bottom: 50px;
+        display: grid;
+        justify-items: center;
+        overflow: hidden;
+    }
+
+    .card_img_frame {
+        width: 270px;
+        height: 250px;
+        overflow: hidden;
+    }
+
+    .card img {
+        max-width:100%;
+        height:auto;
+    }
+
+    .card_name {
+        font-family: 'IM Fell French Canon SC', serif;
+        font-size: 20px;
+        font-weight: 400px;
+        line-height: 16px;
+        text-align: center;
+    }
+
+    .price {
+        font-size: 14px;
+        margin-right: 90px;
+    }
+
+    .card_btn {
+        border: none;
+        font-size: 16px;
+        width: 150px;
+        height: 40px;
+        background: linear-gradient(180deg, #FF6B00 0%, #FFB800 100%);
+        border-radius: 10px;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .modal__backdrop {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.8);
+        opacity: 0;
+        z-index: -1;
+        pointer-events: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.5s ease 0s;
+      }
+      
+    .modal__content {
+        position: relative;
+        min-width: 30%;
+        min-height: 450px;
+        margin: 10px;
+        transition: opacity 0.3s ease-in;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.781);
+        background-clip: padding-box;
+        border-radius: 20px;
+        box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.3);
+    }
+      
+    @media (min-width: 576px) {
+        .modal__content {
+          max-width: 500px;
+          margin: 50px auto;
+        }
+    }
+      
+    .modal__show .modal__backdrop,
+    .modal__show .modal__content {
+        opacity: 1;
+        z-index: 1050;
+        pointer-events: auto;
+        overflow-y: auto;
+    }
+      
+    .modal__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+    }
+      
+    .modal__title {
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 1.5;
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+      
+    .modal__btn-close {
+        float: right;
+        font-family: sans-serif;
+        font-size: 58px;
+        font-weight: 700;
+        line-height: 1;
+        opacity: 0.9;
+        text-decoration: none;
+    }
+      
+    .modal__btn-close:focus,
+    .modal__btn-close:hover {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+        opacity: 0.75;
+    }
+      
+    .modal__body {
+        position: relative;
+        flex: 1 1 auto;
+        overflow: auto;
+    }
+      
+    .modal__footer {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 1rem;
+    }
+      
+    .menu_navlink {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 34px;
+    }
+
+    .menu_navlink a {
+        margin-bottom: 10px;
+    }
+
+    .menu_link_img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu_link_img img {
+        width: 60px;
+        height: 60px;
+        border-radius: 20px;
+        margin: 10px 20px;
+    }
+
+    ._flyImage._ibg {
+        opacity: 1;
+        position: fixed;
+        z-index: 100;
+        transition: all 1s ease 0s;
+        border-radius: 30px;
+    }
+
+    .cart span {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: -15px;
+        right: -15px;
+        border-radius: 50%;
+        background: linear-gradient(180deg, #FF6B00 0%, #FFB800 100%);
+        color: #fff;
+        font-size: 16px;
+        z-index: 3;
+    }
+
+    .card_modal {
+        display: none; 
+        position: fixed; 
+        z-index: 4; 
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto; 
+        background: rgba(0, 0, 0, 0.712);
+    }
+      
+    .card_modal_content {
+        position: relative;
+        background-color: #fff;
+        margin: auto;
+        width: 390px;
+        height: auto;
+        border-radius: 20px;
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatetop;
+        animation-duration: 0.4s;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .modal_img_frame {
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal_img {
+        width: 100%;
+        height: auto;
+    }
+
+    .modal_card_title {
+        font-family: 'IM Fell French Canon SC', serif;
+        text-align: center;
+        margin: 15px 0 10px 0;
+        font-size: 24px;
+        font-weight: bold;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+      
+    .modal_description {
+        font-size: 18px;
+        max-width: 340px;
+        text-align: center;
+    }
+
+    .modal_price {
+        font-size: 14px;
+        margin-right: 10px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .modal_btn {
+        border: none;
+        width: 170px;
+        height: 40px;
+        background: linear-gradient(180deg, #FF6B00 0%, #FFB800 100%);
+        border-radius: 8px;
+        cursor: pointer;
+        color: #fff;
+        margin-left: 30px;
+    }
+
+    .modal_card_footer {
+        padding: 10px;
+        margin-top: 20px;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    @-webkit-keyframes animatetop {
+        from {top:-300px; opacity:0} 
+        to {top:0; opacity:1}
+    }
+      
+    @keyframes animatetop {
+        from {top:-300px; opacity:0}
+        to {top:0; opacity:1}
+    }
+
+    @keyframes animateFromTop {
+        from {top:-300px; opacity:0}
+        to {top:320px; opacity:1}
+    }
+      
+    .close {
+        color: #fff;
+        font-size: 36px;
+        font-weight: bold;
+        right: 500px;
+        top: 110px;
+        position: fixed;
+        z-index: 1001;
+        cursor: pointer;
+    }
+
+    .cart_item {
+        width: 750px;
+        height: 200px;
+        background: #fff;
+        margin: 20px;
+        border-radius: 30px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        box-shadow: 6px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .cart_img_frame {
+        width: 200px;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+    }
+
+    .cart_img {
+        width: 100%; 
+        height: auto;
+    }
+
+    .trash_icon {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+
+    .cart_item_content {
+        padding: 30px;
+        width: 400px;
+    }
+
+    .cart_icon_frame {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cart_btn_buy {
+        width: 350px;
+        height: 55px;
+        border-radius: 10px;
+        border: none;
+        background: linear-gradient(180deg, #FF6B00 0%, #FFB800 100%);
+        color: #fff;
+        font-size: 26px;
+        margin: 10px auto;
+        cursor: pointer;
+    }
+
+    .cart_item_title {
+        font-size: 26px;
+        font-weight: bold;
+        font-family: 'IM Fell French Canon SC', serif;
+        margin-bottom: 15px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .cart_quantity,
+    .cart_price {
+        font-size: 20px;
+        margin-left: 10px;
+        font-family: 'Roboto Slab', serif;
+        margin-bottom: 10px;
+    }
+
+    .cart_title {
+        font-family: 'Roboto Slab';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 32px;
+        margin-left: 45px;
+    }
+
+    .cart_list {
+        display: none;
+        position: absolute; 
+        z-index: 4; 
+        padding-top: 45px;
+        left: 0;
+        top: 320px;
+        width: 100%;
+        height: 100%;
+        overflow: auto; 
+        background: #E8E8E8;
+        animation-name: animateFromTop;
+        animation-duration: 0.4s;
+    }
+
+    .cart_content {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cart_body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cart_empty {
+        width: 100%;
+    }
+
+    ._hold {
+        opacity: 0.5;
+        cursor: default;
+    }
+
+    .info .info_page {
+        padding: 30px 100px;
+    }
+
+    .info_page p {
+        font-family: 'Roboto Slab', serif;
+        font-size: 20px;
+        margin: 5px;
+    }
+
+    .info_page li {
+        padding-left: 10px;
+        font-family: 'Roboto Slab', serif;
+        font-size: 20px;
+        list-style: none;
+        margin: 5px;
+    }
+
+    .info_page h4 {
+        font-size: 36px;
+    }
+
+    .none {
+        display: none;
+    }
+}
