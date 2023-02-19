@@ -419,17 +419,17 @@ window.onload = function() {
     }
 
     
-    // const initialState = () => {
-    //     if (localStorage.getItem('products')) {
-    //         const cart = document.querySelector('.cart')
-    //         const cartQuantity = cart.querySelector('span')
-    //         document.querySelector('.cart_body').innerHTML = localStorage.getItem('products')
-    //         cartQuantity.innerHTML = localStorage.getItem('products')
-    //         console.log(cartQuantity)
-    //     }
-    // }
+    const initialState = () => {
+        if (localStorage.getItem('products')) {
+            const cart = document.querySelector('.cart')
+            const cartQuantity = cart.querySelector('span')
+            document.querySelector('.cart_body').innerHTML = localStorage.getItem('products')
+            cartQuantity.innerHTML = localStorage.getItem('products')
+            console.log(cartQuantity)
+        }
+    }
 
-    // initialState()
+    initialState()
     
 
 // Product Modal
