@@ -7,6 +7,22 @@ const frame = document.getElementById('card_container')
 
 function generateCardsFlowers() {
     const cards = []
+    
+    const sliderItem = document.createElement('div');
+    sliderItem.classList.add('slider_item');
+    sliderItem.dataset.pid = 76;
+
+    const item = document.createElement('div');
+    item.classList.add('item');
+
+    const img = document.createElement('img');
+    img.classList.add('card_img');
+    img.src = 'images/card_76.jpg';
+    img.alt = 'image';
+
+    item.appendChild(img);
+    sliderItem.appendChild(item);
+
     for (let i = 0; i < 67; i++) {
         cards.push(`
             <div data-pid="${data[i].id}" class="card dataset">
@@ -156,14 +172,20 @@ window.onload = function() {
             e.preventDefault()
         }
         if(targetElement.classList.contains('slider_img')) {
-            const productId = targetElement.closest('.slider_item').dataset.pid
-            openModal(targetElement, productId)
-            e.preventDefault()
+            if(targetElement.closest('.dataset')){
+                const productId = targetElement.closest('.slider_item').dataset.pid
+                openModal(targetElement, productId)
+                e.preventDefault()
+            }
         }
         if(targetElement.classList.contains('card_img')) {
-            const productId = targetElement.closest('.dataset').dataset.pid
-            openModal(targetElement, productId)
-            e.preventDefault()
+            if(targetElement.closest('.dataset')){
+                const elem = targetElement.closest('.slider_item');
+                console.log(elem)
+                const productId = elem?.dataset.pid
+                openModal(targetElement, productId)
+                e.preventDefault()
+            }
         }
         if(targetElement.classList.contains('close') || targetElement.classList.contains('card_modal')) {
             const span = document.getElementsByClassName("close")[0]
