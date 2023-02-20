@@ -535,7 +535,7 @@ const form = document.querySelector('.search_form')
         main.style.display = "none"
         cardContainer.style.display = "grid"
         event.preventDefault(); 
-        console.log(input.value);
+        console.log(searchValue);
       });
 
     // domElements.search.button.addEventListener("click", () => {
