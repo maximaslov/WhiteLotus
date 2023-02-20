@@ -522,61 +522,26 @@ const main = document.querySelector('.main')
 const cardsArr = generateCards(data)
 const cardContainer = document.querySelector('.card_container')
 const input = document.querySelector('.search')
-
-
+const form = document.querySelector('.search_form')
 
 {
-    let searchValue = input.value;
-//     domElements.search.input.oninput = () => {
-//     searchValue = input.value
-        
-//     }
-    // let searchValue = ''
-    // domElements.search.input.oninput = (event) => {
-    // searchValue = event.target.value
-        
-    // }
-
-    // input.addEventListener('input', function(event) {
-    //     if (event.inputType === 'insertLineBreak' || event.inputType === 'insertText') {
-    //       filterSearch();
-    //       main.style.display = "none";
-    //       cardContainer.style.display = "grid";
-    //     }
-    //   });
-    input.addEventListener('change', function(event) {
-        searchValue = event.target.value
-      });
-    input.addEventListener('keyup', function(event) {
-        if (event.keyCode === 13 || event.key === 'Enter') {
-          filterSearch();
-          main.style.display = "none";
-          cardContainer.style.display = "grid";
-        }
+    let searchValue;
+    input.addEventListener('input', function() {
+        searchValue = this.value;
       });
 
-    // input.addEventListener('input', function(event) {
-    //     // if (event.inputType === 'insertLineBreak' || event.inputType === 'insertText') {
-    //         const text = event.target.value;
-    //         console.log(text)
-    //       filterSearch();
-    //       main.style.display = "none";
-    //       cardContainer.style.display = "grid";
-    //     // }
-    //   });
-
-    domElements.search.button.addEventListener("click", () => {
+    form.addEventListener('submit', function(event) {
         filterSearch()
         main.style.display = "none"
         cardContainer.style.display = "grid"
-    })
+        event.preventDefault(); 
+        console.log(input.value);
+      });
 
-    // domElements.search.button.addEventListener("keydown", (event) => {
-    //     if (event.key === "Enter") {
-    //         filterSearch()
-    //         main.style.display = "none"
-    //         cardContainer.style.display = "grid"
-    //     }
+    // domElements.search.button.addEventListener("click", () => {
+    //     filterSearch()
+    //     main.style.display = "none"
+    //     cardContainer.style.display = "grid"
     // })
 
     function filterSearch() {
