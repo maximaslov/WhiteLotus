@@ -526,7 +526,7 @@ const form = document.querySelector('.search_form')
 
 {
     let searchValue;
-    input.addEventListener('input', function() {
+    input.addEventListener('keyup', function() {
         searchValue = this.value;
       });
 
