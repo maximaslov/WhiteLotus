@@ -1049,6 +1049,7 @@ img {
         position: relative;
     }
 
+
     .card.dataset:hover {
         transform: scale(1.25);
         z-index: 5;
