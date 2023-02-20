@@ -1,3 +1,5 @@
+'use strict'
+
 const cardsMainContainer = document.querySelector('.nav_btn')
 
 // Product Constructor
@@ -424,8 +426,7 @@ window.onload = function() {
             const cart = document.querySelector('.cart')
             const cartQuantity = cart.querySelector('span')
             document.querySelector('.cart_body').innerHTML = localStorage.getItem('products')
-            cartQuantity.innerHTML = localStorage.getItem('products')
-            console.log(cartQuantity)
+            cartQuantity && (cartQuantity.innerHTML = localStorage.getItem('products'))
         }
     }
 
@@ -524,9 +525,27 @@ const cardContainer = document.querySelector('.card_container')
 const input = document.querySelector('.search')
 const form = document.querySelector('.search_form')
 
+// (function () {
+//     var isSupported = 'oninput' in document.createElement('input');
+  
+//     if (!isSupported) {
+//       Object.defineProperty(HTMLInputElement.prototype, 'oninput', {
+//         get: function() {
+//           return this._oninput;
+//         },
+//         set: function(handler) {
+//           if (this._oninput) {
+//             this.removeEventListener('keyup', this._oninput);
+//           }
+//           this._oninput = handler;
+//           this.addEventListener('keyup', handler);
+//         }
+//       });
+//     }
+//   })();
 {
     let searchValue;
-    input.addEventListener('keyup', function() {
+    input.addEventListener('input', function() {
         searchValue = this.value;
       });
 
