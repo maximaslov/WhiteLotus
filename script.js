@@ -539,7 +539,7 @@ function generateCards(data) {
     const cards = []
     for (let i = 0; i < data.length; i++) {
         cards.push(`
-            <div data-pid="${data[i].id}" class="card dataset">
+            <div data-pid="${data[i].id}" class="card dataset boxes">
                 <div class="card_img_frame"><img class="card_img" src="${data[i].image}" alt="image"></div>
                 <h4 class="card_name">${data[i].name}</h4>
                 <p class="price">Вартість: ${data[i].price}грн</p>
