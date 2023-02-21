@@ -7,7 +7,7 @@ const frame = document.getElementById('card_container')
 
 function generateCardsFlowers() {
     const cards = []
-    
+
     const sliderItem = document.createElement('div');
     sliderItem.classList.add('slider_item');
     sliderItem.dataset.pid = 76;
@@ -25,9 +25,10 @@ function generateCardsFlowers() {
 
     for (let i = 0; i < 67; i++) {
         cards.push(`
-            <div data-pid="${data[i].id}" class="card dataset">
+            <div data-pid="${data[i].id}" class="card dataset flowers">
                 <div class="card_img_frame"><img class="card_img" src="${data[i].image}" alt="image"></div>
                 <h4 class="card_name">${data[i].name}</h4>
+                <h3 class="card_description"> ${data[i].description}</h3>
                 <p class="price">Вартість: ${data[i].price}грн</p>
                 <button class="card_btn">Замовити</button>
             </div>
@@ -40,9 +41,10 @@ function generateCardsSweet() {
     const cards = []
     for (let i = 67; i < 134; i++) {
         cards.push(`
-            <div data-pid="${data[i].id}" class="card dataset">
+            <div data-pid="${data[i].id}" class="card dataset sweet">
                 <div class="card_img_frame"><img class="card_img" src="${data[i].image}" alt="image"></div>
                 <h4 class="card_name">${data[i].name}</h4>
+                <h3 class="card_description"> ${data[i].description}</h3>
                 <p class="price">Вартість: ${data[i].price}грн</p>
                 <button class="card_btn">Замовити</button>
             </div>
@@ -54,9 +56,10 @@ function generateCardsBoxes() {
     const cards = []
     for (let i = 134; i < 195; i++) {
         cards.push(`
-            <div data-pid="${data[i].id}" class="card dataset">
+            <div data-pid="${data[i].id}" class="card dataset boxes">
                 <div class="card_img_frame"><img class="card_img" src="${data[i].image}" alt="image"></div>
                 <h4 class="card_name">${data[i].name}</h4>
+                <h3 class="card_description"> ${data[i].description}</h3>
                 <p class="price">Вартість: ${data[i].price}грн</p>
                 <button class="card_btn">Замовити</button>
             </div>
@@ -68,9 +71,10 @@ function generateCardsMans() {
     const cards = []
     for (let i = 195; i < 285; i++) {
         cards.push(`
-            <div data-pid="${data[i].id}" class="card dataset">
+            <div data-pid="${data[i].id}" class="card dataset man">
                 <div class="card_img_frame"><img class="card_img" src="${data[i].image}" alt="image"></div>
                 <h4 class="card_name">${data[i].name}</h4>
+                <h3 class="card_description"> ${data[i].description}</h3>
                 <p class="price">Вартість: ${data[i].price}грн</p>
                 <button class="card_btn">Замовити</button>
             </div>
@@ -82,9 +86,10 @@ function generateCardsFruitB() {
     const cards = []
     for (let i = 285; i < 350; i++) {
         cards.push(`
-            <div data-pid="${data[i].id}" class="card dataset">
+            <div data-pid="${data[i].id}" class="card dataset fruit">
                 <div class="card_img_frame"><img class="card_img" src="${data[i].image}" alt="image"></div>
                 <h4 class="card_name">${data[i].name}</h4>
+                <h3 class="card_description"> ${data[i].description}</h3>
                 <p class="price">Вартість: ${data[i].price}грн</p>
                 <button class="card_btn">Замовити</button>
             </div>
@@ -96,9 +101,10 @@ function generateCardsFruitBasket() {
     const cards = []
     for (let i = 350; i < 404; i++) {
         cards.push(`
-            <div data-pid="${data[i].id}" class="card dataset">
+            <div data-pid="${data[i].id}" class="card dataset fruitB">
                 <div class="card_img_frame"><img class="card_img" src="${data[i].image}" alt="image"></div>
                 <h4 class="card_name">${data[i].name}</h4>
+                <h3 class="card_description"> ${data[i].description}</h3>
                 <p class="price">Вартість: ${data[i].price}грн</p>
                 <button class="card_btn">Замовити</button>
             </div>
@@ -110,9 +116,10 @@ function generateCardsGiftBasket() {
     const cards = []
     for (let i = 404; i < 454; i++) {
         cards.push(`
-            <div data-pid="${data[i].id}" class="card dataset">
+            <div data-pid="${data[i].id}" class="card dataset gift-basket">
                 <div class="card_img_frame"><img class="card_img" src="${data[i].image}" alt="image"></div>
                 <h4 class="card_name">${data[i].name}</h4>
+                <h3 class="card_description"> ${data[i].description}</h3>
                 <p class="price">Вартість: ${data[i].price}грн</p>
                 <button class="card_btn">Замовити</button>
             </div>
@@ -124,9 +131,10 @@ function generateCardsSets() {
     const cards = []
     for (let i = 454; i < 477; i++) {
         cards.push(`
-            <div data-pid="${data[i].id}" class="card dataset">
+            <div data-pid="${data[i].id}" class="card dataset cards-sets">
                 <div class="card_img_frame"><img class="card_img" src="${data[i].image}" alt="image"></div>
                 <h4 class="card_name">${data[i].name}</h4>
+                <h3 class="card_description"> ${data[i].description}</h3>
                 <p class="price">Вартість: ${data[i].price}грн</p>
                 <button class="card_btn">Замовити</button>
             </div>
@@ -138,9 +146,10 @@ function generateCardsGiftSweets() {
     const cards = []
     for (let i = 477; i < 518; i++) {
         cards.push(`
-            <div data-pid="${data[i].id}" class="card dataset">
+            <div data-pid="${data[i].id}" class="card dataset gift-sweets">
                 <div class="card_img_frame"><img class="card_img" src="${data[i].image}" alt="image"></div>
                 <h4 class="card_name">${data[i].name}</h4>
+                <h3 class="card_description"> ${data[i].description}</h3>
                 <p class="price">Вартість: ${data[i].price}грн</p>
                 <button class="card_btn">Замовити</button>
             </div>

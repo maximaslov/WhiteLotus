@@ -36,6 +36,60 @@ img {
     transform: scale(1.2);
 }
 
+.card {
+    height: 550px;
+}
+
+.card_img {
+    max-width: 100%;
+}
+
+.card_name {
+    max-width: 90%;
+    line-height: 20px;
+}
+
+.card.dataset.flowers {
+    height: 400px;
+}
+.card.dataset.sweet {
+    height: 500px;
+}
+.card.dataset.fruit {
+    height: 480px;
+}
+.card.dataset.fruit {
+    height: 480px;
+}
+.card.dataset.fruitB {
+    height: 480px;
+}
+.card.dataset.cards-sets {
+    height: 450px;
+}
+.card.dataset.boxes {
+    height: 530px;
+}
+.card.dataset.man {
+    height: 530px;
+}
+.card.dataset.gift-basket {
+    height: 550px;
+}
+.card.dataset.gift-sweets {
+    height: 450px;
+}
+
+.card_description {
+    color: black;
+    font-size: 15px;
+    max-width: 90%;
+}
+
+.card_description span {
+    color: red;
+}
+
 @media (max-width: 1150px) {
     .search_form {
         width: 60%;
@@ -346,7 +400,6 @@ img {
         font-family: 'IM Fell French Canon SC', serif;
         font-size: 15px;
         font-weight: 400px;
-        line-height: 16px;
         text-align: center;
     }
 
@@ -1034,7 +1087,7 @@ img {
 
     .card {
         width: 270px;
-        height: 400px;
+        /* height: 550px; */
         background: #fff;
         box-shadow: 6px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 30px;
@@ -1051,7 +1104,7 @@ img {
 
 
     .card.dataset:hover {
-        transform: scale(1.25);
+        transform: scale(1.2);
         z-index: 5;
     }
 
@@ -1070,7 +1123,6 @@ img {
         font-family: 'IM Fell French Canon SC', serif;
         font-size: 20px;
         font-weight: 400px;
-        line-height: 16px;
         text-align: center;
     }
 
