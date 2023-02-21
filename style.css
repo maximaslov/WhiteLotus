@@ -90,6 +90,40 @@ img {
     color: red;
 }
 
+@media (max-width:1000px) {
+    .card.dataset.flowers {
+        height: 300px;
+    }
+    .card.dataset.sweet {
+        height: 384px;
+    }
+    .card.dataset.fruit {
+        height: 480px;
+    }
+    .card.dataset.fruit {
+        height: 385px;
+    }
+    .card.dataset.fruitB {
+        height: 430px;
+    }
+    .card.dataset.cards-sets {
+        height: 360px;
+    }
+    .card.dataset.boxes {
+        height: 446px;
+    }
+    .card.dataset.man {
+        height: 510px;
+    }
+    .card.dataset.gift-basket {
+        height: 450px;
+    }
+    .card.dataset.gift-sweets {
+        height: 340px;
+    }
+    
+}
+
 @media (max-width: 1150px) {
     .search_form {
         width: 60%;
@@ -824,6 +858,7 @@ img {
 /* body, html::-webkit-scrollbar {
     display: none;
 }  */
+
 
 @media (min-width: 1000px) /*and (max-width: 1399px)*/ {
     * {

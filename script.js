@@ -180,22 +180,22 @@ window.onload = function() {
             addToCart(targetElement, productId)
             e.preventDefault()
         }
-        if(targetElement.classList.contains('slider_img')) {
-            if(targetElement.closest('.dataset')){
-                const productId = targetElement.closest('.slider_item').dataset.pid
-                openModal(targetElement, productId)
-                e.preventDefault()
-            }
-        }
-        if(targetElement.classList.contains('card_img')) {
-            if(targetElement.closest('.dataset')){
-                const elem = targetElement.closest('.slider_item');
-                console.log(elem)
-                const productId = elem?.dataset.pid
-                openModal(targetElement, productId)
-                e.preventDefault()
-            }
-        }
+        // if(targetElement.classList.contains('slider_img')) {
+        //     if(targetElement.closest('.dataset')){
+        //         const elem = targetElement.closest('.slider_item');
+        //         // const productId = targetElement.closest('.slider_item').dataset.pid
+        //         openModal(targetElement, elem)
+        //         e.preventDefault()
+        //     }
+        // }
+        // if(targetElement.classList.contains('card_img')) {
+        //     if(targetElement.closest('.dataset')){
+        //         const elem = targetElement.closest('.slider_item');
+        //         // const productId = elem?.dataset.pid
+        //         openModal(targetElement, elem)
+        //         e.preventDefault()
+        //     }
+        // }
         if(targetElement.classList.contains('close') || targetElement.classList.contains('card_modal')) {
             const span = document.getElementsByClassName("close")[0]
             const modal = document.querySelector(".card_modal")
@@ -465,51 +465,52 @@ window.onload = function() {
     
 
 // Product Modal
-    function openModal(productButton, productId) {
-        cardId = productId - 1
-        const productItem = document.querySelector(`[data-pid="${productId}"]`)
-        const modal = document.querySelector(".card_modal");
-        if(modal) {
-            const createModalCard = `
-                <div data-pid="${productId}" class="card card_modal_content">
-                    <div class="modal_img_frame"><img class="modal_img card_img" src="${data[cardId].image}" alt="image"><span class="close">&times;</span></div>
-                    <h4 class="modal_card_title">${data[cardId].name}</h4>
-                    <p class="modal_description">${data[cardId].description}</p>
-                    <div class="modal_card_footer">
-                        <p class="modal_price">Вартість: ${data[cardId].price}грн</p>
-                        <button class="card_btn modal_btn">Замовити</button>
-                    </div>
-                </div>`
-            modal.insertAdjacentHTML('beforeend', createModalCard)
-            modal.style.display = "block"
+    // function openModal(productButton, elem) {
+    //     // cardId = productId - 1
+    //     cardId = elem.dataset.pid;
+    //     const productItem = document.querySelector(`[data-pid="${productId}"]`)
+    //     const modal = document.querySelector(".card_modal");
+    //     if(modal) {
+    //         const createModalCard = `
+    //             <div data-pid="${productId}" class="card card_modal_content">
+    //                 <div class="modal_img_frame"><img class="modal_img card_img" src="${data[cardId].image}" alt="image"><span class="close">&times;</span></div>
+    //                 <h4 class="modal_card_title">${data[cardId].name}</h4>
+    //                 <p class="modal_description">${data[cardId].description}</p>
+    //                 <div class="modal_card_footer">
+    //                     <p class="modal_price">Вартість: ${data[cardId].price}грн</p>
+    //                     <button class="card_btn modal_btn">Замовити</button>
+    //                 </div>
+    //             </div>`
+    //         modal.insertAdjacentHTML('beforeend', createModalCard)
+    //         modal.style.display = "block"
 
-            window.onclick = function(event) {
-                if (event.target == modal) {
-                    modal.style.display = "none"
-                    }
-                }
-        } else {
-            document.body.insertAdjacentHTML('beforeend', `<div class="card_modal"></div>`)
-            cardId = productId - 1
-            const productItem = document.querySelector(`[data-pid="${productId}"]`)
-            const modal = document.querySelector(".card_modal")
+    //         window.onclick = function(event) {
+    //             if (event.target == modal) {
+    //                 modal.style.display = "none"
+    //                 }
+    //             }
+    //     } else {
+    //         document.body.insertAdjacentHTML('beforeend', `<div class="card_modal"></div>`)
+    //         cardId = productId - 1
+    //         const productItem = document.querySelector(`[data-pid="${productId}"]`)
+    //         const modal = document.querySelector(".card_modal")
 
-            const createModalCard = `
-                <div data-pid="${productId}" class="card card_modal_content">
-                    <div class="modal_img_frame"><img class="modal_img" src="${data[cardId].image}" alt="image"><span class="close">&times;</span></div>
-                    <h4 class="modal_card_title">${data[cardId].name}</h4>
-                    <p class="modal_description">${data[cardId].description}</p>
-                    <div class="modal_card_footer">
-                        <p class="modal_price">Вартість: ${data[cardId].price}грн</p>
-                        <button class="card_btn modal_btn">Замовити</button>
-                    </div>
-                </div>`
-        modal.insertAdjacentHTML('beforeend', createModalCard)
-        modal.style.display = "block"
+    //         const createModalCard = `
+    //             <div data-pid="${productId}" class="card card_modal_content">
+    //                 <div class="modal_img_frame"><img class="modal_img" src="${data[cardId].image}" alt="image"><span class="close">&times;</span></div>
+    //                 <h4 class="modal_card_title">${data[cardId].name}</h4>
+    //                 <p class="modal_description">${data[cardId].description}</p>
+    //                 <div class="modal_card_footer">
+    //                     <p class="modal_price">Вартість: ${data[cardId].price}грн</p>
+    //                     <button class="card_btn modal_btn">Замовити</button>
+    //                 </div>
+    //             </div>`
+    //     modal.insertAdjacentHTML('beforeend', createModalCard)
+    //     modal.style.display = "block"
 
        
-        }
-    }
+    //     }
+    // }
 
 // Open Cart
     function openCart() {
